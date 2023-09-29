@@ -1,0 +1,3025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Buddy</title>
+    <link rel="stylesheet" href="brainbuddy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiper js slider link  -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+  </head>
+  <body>
+    <!-- start navbar -->
+
+    <nav>
+      <div class="container nav-container">
+        <div class="logo">
+          <div class="home">
+            <a href=""
+              ><i class="fa-solid fa-house" style="color: hsl(0, 95%, 60%)"></i
+            ></a>
+          </div>
+          <img src="./logolight.png" alt="" />
+          <h3>Brain <span>Buddy</span></h3>
+        </div>
+        <div class="search-bar">
+          <i class="fa fa-search"></i>
+          <input type="search" placeholder="Search For Mentors" />
+        </div>
+        <div class="add-post">
+          <label for="add-post-1" class="btn btn-primary mini-button">Add Post</label>
+          <div class="profile-picture" id="my-profile-picture">
+            <img src="./img-1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- start main section  -->
+
+    <main>
+      <div class="container main-container">
+        <!-- main left start  -->
+        <div class="main-left">
+          <!-- profile start -->
+
+          <div class="profile">
+            <div class="profile-picture" id="my-profile-picture">
+              <img src="./img-1.jpg" alt="">
+            </div>
+            <div class="profile-handle">
+              <h3>Student</h3>
+              <p class="text-gray">@theStudent</p>
+            </div>
+          </div>
+
+          <!-- profile end -->
+
+          <!-- asidebar start -->
+
+          <aside>
+            <a class="menu-item menu-item-1 active" >
+              <span><i class="fa-solid fa-house-user"></i></span>
+              <h3>Home</h3>
+            </a>
+
+            <a  class="menu-item menu-item-2" id="doubt-section">
+              <span><i class="fa-brands fa-dashcube"></i></span>
+              <h3>Doubt Section</h3>
+            </a>
+
+            <a class="menu-item menu-item-3" id="notify-box">
+              <span><i class="fa-solid fa-bell"></i></span>
+              <small class="notfy-counter" id="ntCounter1">7+</small>
+              <h3>Notifications</h3>
+
+              <!-- notification box -->
+              <div class="notification-box">
+                <div>
+                  <div class="profile-picture" id="my-profile">
+                    <img src="./stu2.jpeg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Ganesh B</b> accepted your freind request
+                    <small class="text-gray">1 Days Ago</small>
+                  </div>
+                </div>
+  
+                <div>
+                  <div class="profile-picture" id="my-profile">
+                    <img src="./stu3.jpeg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Mahalakshmi</b> commented on your post
+                    <small class="text-gray">2 Hours ago</small>
+                  </div>
+                </div>
+  
+                <div>
+                  <div class="profile-picture" id="my-profile">
+                    <img src="./stu4.jpeg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Bhargav S</b> liked your post
+                    <small class="text-gray">1 Hours Ago</small>
+                  </div>
+                </div>
+  
+                <div>
+                  <div class="profile-picture" id="my-profile">
+                    <img src="./stu5.jpeg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Akash K</b> Saved your post
+                    <small class="text-gray">10 Mins Ago</small>
+                  </div>
+                </div>
+
+                <div>
+                    <div class="profile-picture" id="my-profile">
+                      <img src="./pro1.jpg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Meeth Jain</b> Mentioned you in comment
+                      <small class="text-gray">10 Days Ago</small>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="profile-picture" id="my-profile">
+                      <img src="./pro3.jpeg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Benaka P</b> Saved your post
+                      <small class="text-gray">3 Days Ago</small>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="profile-picture" id="my-profile">
+                      <img src="./pro2.jpeg" alt="" />
+                    </div>
+                    <div class="notification-body">
+                      <b>Deepak N</b> Liked your post
+                      <small class="text-gray">4 Mins Ago</small>
+                    </div>
+                  </div>
+
+              </div>
+              
+              <!-- notification box -->
+            </a>
+
+            <a class="menu-item menu-item-4"  id="message-menu">
+              <span id="nav-icon"><i class="fa-solid fa-message"></i></span>
+              <small class="notfy-counter" id="ntCounter2">2+</small>
+              <h3>Message</h3>
+            </a>
+
+            <a  class="menu-item menu-item-5" id="shop-btn">
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+              <h3>Shopping</h3>
+            </a>
+
+            <a  class="menu-item menu-item-6" id="theme">
+              <span><i class="fa-solid fa-circle-half-stroke"></i></span>
+              <h3>Theme</h3>
+            </a>
+            
+            <a  class="menu-item menu-item-7" id="settings-aside">
+              <span><i class="fa-solid fa-circle-info"></i></span>
+              <h3>Help</h3>
+            </a>
+
+          </aside>
+
+          <label for="add-post-popup" class="btn btn-primary btn-lg" id="crate-lg"><i class="fa-regular fa-square-plus"></i><p>Create A Post</p></label>
+
+          <!-- asidebar end -->
+        </div>
+        <!-- main left end  -->
+
+        <!-- main middle start  -->
+        <div class="main-middle">
+          
+            <div class="">
+                <div class="middle-container">
+
+                    <!-- stories start  -->
+              <div class="stories">
+                
+                <div class="story-wrapper swiper mySwiper">
+                    <div class="swiper-wrapper">
+    
+                        <div class="story swiper-slide">
+                            <img src="" alt="">
+                            <div class="profile-picture " id="my-profile-picture" >
+                                <img src="./img-1.jpg" alt="">
+                            </div>
+                            <label for="add-story" class="add-story">
+                                <i class="fa fa-add"></i>
+                                <p>Add your <br> story</p>
+                            </label>
+                            <input type="file" accept="image/jpg,image/jpeg,image/png" id="add-story">
+                        </div>
+                      
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                               <div class="profile-picture " >
+                                 <img src="./stu2.jpeg" alt="">
+                               </div>
+                            <p>Ganesh</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu3.jpeg" alt="">
+                            </div>
+                            <p>Abilash</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu4.jpeg" alt="">
+                            </div>
+                            <p>Amogha</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu5.jpeg" alt="">
+                            </div>
+                            <p>Deekshith</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu6.jpeg" alt="">
+                            </div>
+                            <p>Manoj</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu1.jpg" alt="">
+                            </div>
+                            <p>Swathi</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu2.jpeg" alt="">
+                            </div>
+                            <p>lakshmi pathi</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu3.jpeg" alt="">
+                            </div>
+                            <p>Kalpana</p>
+                        </div>
+                        <div class="story swiper-slide">
+                            <img src="./st1.jpg" alt="">
+                            <div class="profile-picture " >
+                                <img src="./stu4.jpeg" alt="">
+                            </div>
+                            <p>Jayanth</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+                <!-- stories end  -->
+                
+                
+                <!-- post input  -->
+        
+                <form class="add-post-1 input-post">
+                  <div class="profile-picture" id="my-profile-picture">
+                      <img src="./img-1.jpg" alt="">
+                  </div>
+                  <input type="text" placeholder="What's on your mind ?" id="add-post-1">
+                  <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+        
+                <!-- post input  -->
+    
+                <!-- feed area  -->   
+                <div class="feeds">
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro4.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>2 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news7.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Maniappa</b> and <b>98 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Disease Control and prevention</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro2.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Geethanjali</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>4 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-tweet">
+                            Chandrayaan 3 is Indias third lunar mission, and it successfully landed on the Moon’s south pole on August 23, 2023. The missions main goal is to search for water ice on the Moon, which could be a valuable resource for future human exploration. Chandrayaan 3 will also study the Moons geology, history, and environment.
+    
+                            <br><br> The mission consists of a lander, a rover, and an orbiter. The lander, Vikram, deployed the rover, Pragyan, which began exploring the Moons surface on September 2, 2023. The orbiter, Chandrayaan-3 Orbiter, is collecting data about the Moons atmosphere, surface, and interior.
+    
+                            <br><br> The successful landing of Chandrayaan-3 is a major achievement for India’s space program. It is only the fourth country to successfully land a spacecraft on the Moon, and the first to land on the south pole. This accomplishment is a testament to the hard work and dedication of the Indian Space Research Organization (ISRO) team.
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Channapa</b> and <b>79 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Missile on the Moon</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro4.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>3 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./edu1.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Ganesh</b> and <b>77 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Riddles For Kids</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Education</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./img-1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Manoj S</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>2 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./stock2.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu6.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Swathi</b> and <b>47 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Stocks</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Stock Update</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro7.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>2 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-vedio">
+                            <video src="./vedio1.mp4" controls></video>
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu5.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Channapa</b> and <b>432 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Do Not lose Hope on yourself</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Motivation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Varsha</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>3 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-tweet">
+                            Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.
+    
+                            <br><br>As the hype around AI has accelerated, vendors have been scrambling to promote how their products and services use it. Often, what they refer to as AI is simply a component of the technology, such as machine learning. AI requires a foundation of specialized hardware and software for writing and training machine learning algorithms. No single programming language is synonymous with AI, but Python, R, Java, C++ and Julia have features popular with AI developers.
+    
+                            <br><br>In general, AI systems work by ingesting large amounts of labeled training data, analyzing the data for correlations and patterns, and using these patterns to make predictions about future states. In this way, a chatbot that is fed examples of text can learn to generate lifelike exchanges with people, or an image recognition tool can learn to identify and describe objects in images by reviewing millions of examples. New, rapidly improving generative AI techniques can create realistic text, images, music and other media
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Mahesh</b> and <b>92 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Artificial Intelligence</b><br> What Is AI ? How Does it Work?
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro6.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Faisal</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>4 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./moti1.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Yasin</b> and <b>98 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Motivation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Motivation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro2.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Anitha</h3>
+                                    <div class="time text-gray">
+                                       <small> Andhra, <span>5 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news3.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu5.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Kanchana</b> and <b>47 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Fake Profiles</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro4.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>2 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./inno1.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Lakshmi Pathi</b> and <b>73 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Innovation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Innovation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro9.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Viru</h3>
+                                    <div class="time text-gray">
+                                       <small> Maharastra, <span>3 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-vedio">
+                            <video src="./vedio2.mp4" controls></video>
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Virus</b> and <b>73 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>APJ Motivation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Motivation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro3.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Benaka</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>2 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news5.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Channapa</b> and <b>58 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>G20</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro4.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>6 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-tweet">
+                            Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Ananth</b> and <b>24 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Cloud Computing</b><br> What Is Cloud Computing?
+                                <br><span class="hash-tag">#Daily News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro1.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Swathi</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>5 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news10.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Jayanth</b> and <b>922 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>India</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#News</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro4.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dhanush N</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>6 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-vedio">
+                            <video src="./vedio3.mp4" controls></video>
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Manoj</b> and <b>433 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Road Map for Python</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Education</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro2.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Swathi</h3>
+                                    <div class="time text-gray">
+                                       <small> Kerala, <span>5 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./inno3.png" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Kanchana</b> and <b>36 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Innovation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Innovation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro6.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Priyaa</h3>
+                                    <div class="time text-gray">
+                                       <small> Jammu And Kashmir, <span>10 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./moti2.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Kaash</b> and <b>69 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Team Work Is More Important thand doing Alone</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Motivation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro8.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Anirudh</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>12 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./inno2.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu4.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Karthik</b> and <b>74 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Innovation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Innovation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro3.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Hitesh</h3>
+                                    <div class="time text-gray">
+                                       <small> Tamil Nadu, <span>14 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news6.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu5.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./pro1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>amith</b> and <b>35 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Chandrayaan2</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Knowlegde</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro7.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Dileep</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>14 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./edu3.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./pro4.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Channabasveshvara</b> and <b>49 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Books</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Knowlegde</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro3.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Rajeeva</h3>
+                                    <div class="time text-gray">
+                                       <small> Andhra Pradesh, <span>17 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./edu5.jpg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./pro1.jpg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Paavani</b> and <b>73 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Inspiration</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Knowlegde</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro6.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Nagalakshmi</h3>
+                                    <div class="time text-gray">
+                                       <small> Tamil Nadu, <span>21 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./moti4.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./pro5.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Amith Jain</b> and <b>51 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Motivation</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Motivation</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+    
+                    <div class="feed">
+    
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./pro2.jpeg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Manjula</h3>
+                                    <div class="time text-gray">
+                                       <small> Karnataka, <span>24 Days Ago</span> </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="feed-img">
+                            <img src="./news9.jpeg" alt="">
+                        </div>
+    
+                        <div class="action-button">
+                            <div class="interaction-btn">
+                                <span><i class="fa fa-heart"></i></span>
+                                <span><i class="fa fa-comment-dots"></i></span>
+                                <span><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                        </div>
+    
+                        <!-- liked by -->
+    
+                        <div class="liked-by">
+                            <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                            <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                            <span><img src="./pro7.jpeg" class="profile-picture "  alt=""></span>
+                            <p>
+                                <b>Abishek</b> and <b>89 comments others</b>
+                            </p>
+                        </div>
+                        
+                        <!-- caption  -->
+    
+                        <div class="caption">
+                            <p><b>Bharat</b><br> Lorem ipsum dolor sit amet, consectetur
+                                <br><span class="hash-tag">#Bharat</span>
+                            </p>
+                        </div>
+    
+                        <!-- comments  -->
+                        <div class="comments text-gray">
+                            View all comments
+                        </div>
+    
+                    </div>
+                </div>
+    
+                </div>
+    
+                <div class="doubt-section" >
+                    <div class="doubt-profile-section">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="./img-1.jpg" alt="">
+    
+                        </div>
+                        <div class="profile-question">
+                            <p>Questions Asked<b>:20</b></p>
+                            <p>Questions Answered<b>:102</b></p>
+                        </div>
+                        <div class="doubt-coins">
+                            <i class="fa-solid fa-coins"></i>
+                            <p>4039</p>
+                        </div>
+                    </div>
+                    <div class="doubt-main-section">
+                        <form class="add-doubt input-doubt">
+                            <i class="fa-solid fa-magnifying-glass icon-size"></i>
+                            <input type="text" placeholder="Ask Question" id="add-doubt">
+                            <input type="submit" value="Ask" class="btn btn-primary">
+                            <div class="camera">
+                                <label for="ask-doubt-camera" class="doubt-camera">
+                                    <i class="fa fa-camera icon-size"></i>
+                                </label>
+                                <input type="file" accept="image/jpg,image/jpeg,image/png" id="ask-doubt-camera">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="question-section">
+                        <div class="freq-question-section">
+                            <div class="freq-question-section-top">
+                                <h4>Frequently Asked Questions</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="freq-question-cointainer">
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                                <div class="freq-question">
+                                    <div class="freq-top">
+                                        <div class="user">
+                                            <div class="profile-picture">
+                                                <img src="./pro4.jpeg" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h3>Dhanush N</h3>
+                                                <div class="time text-gray">
+                                                   <small> <span>2 Days Ago</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="freq-coins">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <p><b>+</b>26 coins</p>
+                                        </div>
+                                    </div>
+                                    <div class="freq-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+                                    <div class="action-button">
+                                        <div class="interaction-btn">
+                                            <span><i class="fa fa-heart"></i></span>
+                                        </div>
+                                        <div class="answer">
+                                            <label for="answer" class="btn btn-primary" id="answer-pop">Answer</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Answers  -->
+    
+                                    <div class="view-answers text-gray">
+                                        <label for="view-anwer" class="btn btn-primary" id="view-ans-pop">View-Answers(3)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="your-question-section">
+                            <div class="freq-question-section-top">
+                                <h4>Your questions</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="your-question-container">
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                                <div class="your-question">
+                                    <div class="your-question-top">
+                                        <div class="info">
+                                            <small><span>2 Days Ago</span> </small>
+                                        </div>
+                                        <div class="edit">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <ul class="edit-menu">
+                                                <li><i class="fa fa-pen"></i>Edit</li>
+                                                <li><i class="fa fa-trash"></i>Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="your-que">
+                                        <p>What is called Idioms?</p>
+                                    </div>
+        
+                                    <!-- liked by -->
+                
+                                    <div class="liked-by">
+                                        <span><img src="./stu1.jpg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu2.jpeg" class="profile-picture "  alt=""></span>
+                                        <span><img src="./stu3.jpeg" class="profile-picture "  alt=""></span>
+                                        <p>
+                                            <b>Maniappa</b> and <b>98 others liked</b>
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- answers -->
+                
+                                    <div class="view-answers text-gray" id="view-ans-pop">
+                                        <label for="view-anwer" class="btn btn-primary">View-Answers(3)</label>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="shopping-section">
+                    <div class="shopping-top">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="./img-1.jpg" alt="">
+                        </div>
+                        <div class="shopping-search">
+                            <form action="">
+                                <i class="fa-solid fa-magnifying-glass icon-size"></i>
+                                <input type="text" placeholder="Search BrainBuddy.in" id="add-doubt">
+                            </form>
+                        </div>
+                        <div class="doubt-coins">
+                            <i class="fa-solid fa-coins"></i>
+                            <p>4039</p>
+                        </div>
+                    </div>
+                    <p class="text-gray ruppee"><sup>*</sup> 1 Ruppee = 4 Coins</p>
+                    <div class="shopping-body">
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>Dont Believe Everything You think</h3>
+                                <div class="box-img">
+                                    <img src="./book1.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>200+ Activities For Kids</h3>
+                                <div class="box-img">
+                                    <img src="./book2.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>Rich Dad Poor Dad</h3>
+                                <div class="box-img">
+                                    <img src="./book3.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>Think Strainght</h3>
+                                <div class="box-img">
+                                    <img src="./book4.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>299</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>Pencil Control</h3>
+                                <div class="box-img">
+                                    <img src="./book5.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <h3>The power of subconcious mind</h3>
+                                <div class="box-img">
+                                    <img src="./book6.jpg" alt="">
+                                </div>
+                                <div class="box-footer">
+                                    <p class="buy-now">Buy Now</p>
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>599</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- main middle end  -->
+        
+        <!-- main right start  -->
+        <div class="main-right">
+            <div class="messages">
+                <div class="message-top">
+                    <h4>Message</h4> <i class="fa fa-edit"></i>
+                </div>
+                <!-- search bar  -->
+                <div class="message-search-bar">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Search Message" id="message-search">
+                </div>
+                <!-- message category  -->
+                <div class="message-category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-request">Request(3)</h6>
+                </div>
+                <!-- Message  -->
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./img-1.jpg" alt="">
+                        <div class="green-active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Ganesh N</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./stu1.jpg" alt="">
+                        <div class=""></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Laura</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./pro1.jpg" alt="">
+                        <div class="green-active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Geetha</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./stu4.jpeg" alt="">
+                        <div class=""></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Dhanush</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./stu3.jpeg" alt="">
+                        <div class="green-active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Swathi</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./pro3.jpeg" alt="">
+                        <div class=""></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Manju</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-picture">
+                        <img src="./pro7.jpeg" alt="">
+                        <div class=""></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Dr Laurence</h5>
+                        <p class="text-gray">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="freind-request">
+                <h4>Request</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="./stu3.jpeg" alt="">
+                        </div>
+                        <div class="">
+                            <h5>Kalpana K</h5>
+                            <p class="text-gray">
+                                4 mutual freind
+                            </p>
+                            <small class="text-gray alert">You Have accepted freind request</small>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="btn btn-primary" id="accept">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger" id="reject"> 
+                            Reject
+                        </div>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="./img-1.jpg" alt="">
+                        </div>
+                        <div class="">
+                            <h5>Dr Panchegowda</h5>
+                            <p class="text-gray">
+                                2 mutual freind
+                            </p>
+                            <small class="text-gray alert">You Have accepted freind request</small>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="btn btn-primary" id="accept">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger" id="reject">
+                            Reject
+                        </div>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="./stu4.jpeg" alt="">
+                        </div>
+                        <div class="">
+                            <h5>Channapa</h5>
+                            <p class="text-gray">
+                                5 mutual freind
+                            </p>
+                            <small class="text-gray alert">You Have accepted freind request</small>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="btn btn-primary" id="accept">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger" id="reject">
+                            Reject
+                        </div>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="./stu6.jpeg" alt="">
+                        </div>
+                        <div class="">
+                            <h5>Manoj S</h5>
+                            <p class="text-gray">
+                                3 mutual freind
+                            </p>
+                            <small class="text-gray alert">You Have accepted freind request</small>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="btn btn-primary" id="accept">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger" id="reject">
+                            Reject
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main right end  -->
+    </div>
+
+    </div>
+    </main>
+
+    <!-- end main section  -->
+
+
+
+
+    <!-- start popup section  -->
+
+
+
+
+    <!-- start of profile popup section  -->
+
+    <div class="popup proflie-popup">
+        <div>
+            <div class="popup-box proflie-popup-box">
+                <h1>Student</h1>
+                <p>@thestudent</p>
+                <div id="my-profile-picture">
+                    <img src="./img-1.jpg" alt="">
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile Picture</label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    <!-- end of profile popup section  -->
+
+
+
+    
+    <!-- strat add post popup section  -->
+
+    <div class="popup add-post-popup" >
+        <div class="">
+            <form action="" class="popup-box add-post-popup">
+                <h1>Add New Post</h1>
+                <div class="row post-title">
+                    <label for="">Title</label>
+                    <input type="text" placeholder="What's on your mind" id="add-post">
+                </div>
+                <div class="row post-img">
+                    <img src="" alt="" id="postImg">
+                <label for="feed-pic-upload" class="feed-upload-btn">
+                    <span><i class="fa fa-add"></i></span> Upload A Picture
+                </label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                <input type="submit" class="btn btn-lg btn-primary">Add Post</input>
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    <!-- end add post popup section  --> 
+    
+    
+    
+    <!-- start theme popup section  -->
+    <div class="popup theme-customize" id="theme-popup">
+        <div class="">
+            <div class="popup-box theme-customize-popup-box">
+                <h1>Customization<br><h2>Your Theme</h2></h1>
+                <p>Manage your Color and Background</p>
+
+                <!-- primary color  -->
+                <div class="colors">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color-1 active"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+
+                <!-- bacground colours  -->
+
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg1 active">
+                            <span></span>
+                            <h5 class="">Light</h5>
+                        </div>
+                        <div class="bg2">
+                            <span></span>
+                            <h5 class="">Dark</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <!-- end theme popup section  -->
+
+    <!-- answer popup start  -->
+    <div class="popup add-answer-popup" >
+        <div class="">
+            <form action="" class="popup-box add-answer-popup-box">
+                <h1>Answer The Question</h1>
+                <div class="answer">
+                    <textarea name="answer-field" id="answer-textarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row Answer-img">
+                    <img src="" alt="" id="answerImg">
+                <label for="answer-pic-upload" class="answer-upload-btn">
+                    <span><i class="fa fa-add"></i></span> Upload A Picture
+                </label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="answer-pic-upload">
+                <input type="Submit" class="btn btn-lg btn-primary"></input>
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <!-- answer popup end  -->
+
+
+    <!-- answer popup start  -->
+    <div class="popup view-answer-popup" >
+        <div class="">
+            <form action="" class="popup-box view-answer-popup-box">
+                <h1>Answer The Question</h1>
+                <div class="view-answer">
+                    <div class="answer-1">
+                        <h3>Answer Most Loved</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo veniam, nesciunt optio amet ipsa, adipisci doloremque eum, illo ea facilis fuga possimus. Cumque, soluta a culpa necessitatibus quidem fugiat?</p>
+                    </div>
+                    <div class="answer-2">
+                        <h3>Answer By Mentor</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit commodi earum nesciunt provident porro amet aperiam, necessitatibus doloremque consequatur eos.</p>
+                    </div>
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <!-- answer popup end  -->
+
+
+    <!-- settings popup  -->
+
+    <div class="popup settings-popup">
+            <div>
+                <form action="" class="popup-box settings-popup-box">
+                    <h2><i class="fa-solid fa-circle-info"></i></i>Help Center</h2>
+                    <div class="settings-page">
+                        <div class="about-pdf">
+                            <a href="./Module_4_-_Parliament (1).pdf" download="./pdf/Module_4_-_Parliament (1).pdf">About Us</a> 
+                         </div>
+                        <div class="help-pdf">
+                           <a href="./Module_4_-_Parliament (1).pdf" download="./pdf/Module_4_-_Parliament (1).pdf">How To Use This Web</a> 
+                        </div>
+                        <div class="terms-and-c">
+                            <a href="./Module_4_-_Parliament (1).pdf" download="./pdf/Module_4_-_Parliament (1).pdf">Terms And Conditions</a>
+                        </div>
+                    </div>
+                    <form action="" class="contact-us">
+                        <h3>Contact Us</h3>
+                        <div class="form">
+                            <label for="name" class="form-label">Your name</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="form">
+                            <label for="email" class="form-label">Your Mail</label>
+                            <input type="email" class="form-control" >
+                        </div>
+                        <div class="form">
+                            <label for="phone" class="form-label">Your Phone number</label>
+                            <input type="number" class="form-control" >
+                        </div>
+                        <input type="submit" class="btn btn-primary form-btn"></input>
+                        <p class="text-gray"><sup>*</sup> We Will Call Or Reach You In 24hrs</p>
+                    </form>
+                </form>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+    </div>
+
+    <!-- settings popup end  -->
+
+
+    <!-- end popup section  -->
+    
+
+
+
+    <!-- swiper js link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./brainbuddy.js"></script>
+  </body>
+</html>
